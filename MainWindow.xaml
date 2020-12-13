@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ReverseText"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="ReverseText" Height="329" Width="613">
     <Grid>
+        <TextBox x:Name="B2" HorizontalAlignment="Left" AcceptsReturn="True" Margin="342,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237" Height="203"/>
+        <TextBox x:Name="B1" HorizontalAlignment="Left" AcceptsReturn="True" Margin="10,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237" Height="203"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,34,0,0" Text="Введите текст:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14"/>
+        <Button Content="Развернуть" HorizontalAlignment="Left" Margin="252,230,0,0" VerticalAlignment="Top" Width="85" Height="27" FontSize="14"/>
 
     </Grid>
 </Window>
