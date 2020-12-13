@@ -27,7 +27,15 @@ namespace ReverseText
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            char[] input_text = B1.Text.ToCharArray();
+            string res_string = "";
 
+            for (int i = input_text.Length; i > 0; i--)
+            {
+                res_string += input_text[i-1];
+            }
+
+            B2.Text = res_string;
         }
     }
 }
