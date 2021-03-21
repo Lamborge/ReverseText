@@ -5,12 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ReverseText"
         mc:Ignorable="d"
+        ResizeMode="NoResize"
         Title="ReverseText" Height="329" Width="613">
-    <Grid>
+    <Grid x:Name="Grid" Background="White">
         <TextBox x:Name="B2" HorizontalAlignment="Left" AcceptsReturn="True" Margin="342,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237" Height="203"/>
         <TextBox x:Name="B1" HorizontalAlignment="Left" AcceptsReturn="True" Margin="10,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237" Height="203"/>
-        <TextBlock x:Name="T1" HorizontalAlignment="Left" Margin="10,34,0,0" Text="Введите текст:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14"/>
+        <TextBlock x:Name="Text1" HorizontalAlignment="Left" Margin="10,34,0,0" Text="Введите текст:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14" Foreground="Black"/>
         <Button x:Name="Button" Content="Развернуть" HorizontalAlignment="Left" Margin="252,230,0,0" VerticalAlignment="Top" Width="85" Height="27" FontSize="14" Click="Button_Click"/>
+        <CheckBox x:Name="NightTheme" Content="Тёмная тема" HorizontalAlignment="Left" Margin="490,10,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
 
     </Grid>
 </Window>

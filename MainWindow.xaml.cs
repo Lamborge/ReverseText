@@ -37,5 +37,27 @@ namespace ReverseText
 
             B2.Text = res_string;
         }
+
+        private void CheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            Grid.Background = new SolidColorBrush(Color.FromRgb(31, 31, 31));
+            NightTheme.Foreground = new SolidColorBrush(Color.FromRgb(204, 204, 204));
+            B1.Background = new SolidColorBrush(Color.FromRgb(31, 31, 31));
+            B2.Background = new SolidColorBrush(Color.FromRgb(31, 31, 31));
+            B1.Foreground = new SolidColorBrush(Color.FromRgb(204, 204, 204));
+            B2.Foreground = new SolidColorBrush(Color.FromRgb(204, 204, 204));
+            Text1.Foreground = new SolidColorBrush(Color.FromRgb(204, 204, 204));
+        }
+
+        private void CheckBox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            Grid.Background = new SolidColorBrush(Color.FromRgb(255, 255, 255));
+            NightTheme.Foreground = new SolidColorBrush(Color.FromRgb(0, 0, 0));
+            B1.Background = new SolidColorBrush(Color.FromRgb(255, 255, 255));
+            B2.Background = new SolidColorBrush(Color.FromRgb(255, 255, 255));
+            B1.Foreground = new SolidColorBrush(Color.FromRgb(0, 0, 0));
+            B2.Foreground = new SolidColorBrush(Color.FromRgb(0, 0, 0));
+            Text1.Foreground = new SolidColorBrush(Color.FromRgb(0, 0, 0));
+        }
     }
 }
